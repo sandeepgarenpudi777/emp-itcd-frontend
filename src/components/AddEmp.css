@@ -1,0 +1,97 @@
+/* Background */
+.form-wrapper{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#667eea,#764ba2,#6a11cb,#2575fc);
+    background-size:400% 400%;
+    animation:bgMove 10s infinite alternate;
+}
+
+/* Background animation */
+@keyframes bgMove{
+    0%{background-position:0% 50%;}
+    100%{background-position:100% 50%;}
+}
+
+/* Glass Form */
+.emp-form{
+    width:400px;
+    padding:40px;
+    border-radius:20px;
+    backdrop-filter:blur(20px);
+    background:rgba(255,255,255,0.15);
+    box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    border:1px solid rgba(255,255,255,0.3);
+}
+
+/* Title */
+.title{
+    text-align:center;
+    color:white;
+    margin-bottom:30px;
+    font-size:28px;
+}
+
+/* Input Group */
+.input-group{
+    position:relative;
+    margin-bottom:30px;
+}
+
+/* Input */
+.input-group input{
+    width:100%;
+    padding:12px;
+    border:none;
+    outline:none;
+    border-radius:8px;
+    background:rgba(255,255,255,0.2);
+    color:white;
+    font-size:16px;
+}
+
+/* Floating label */
+.input-group label{
+    position:absolute;
+    left:12px;
+    top:12px;
+    color:#eee;
+    pointer-events:none;
+    transition:0.3s;
+}
+
+/* Floating animation */
+.input-group input:focus + label,
+.input-group input:not(:placeholder-shown) + label,
+.input-group input:valid + label{
+    top:-10px;
+    font-size:12px;
+    color:#fff;
+}
+
+/* Glow focus */
+.input-group input:focus{
+    box-shadow:0 0 10px #00f7ff;
+}
+
+/* Button */
+.submit-btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:bold;
+    color:white;
+    cursor:pointer;
+    background:linear-gradient(45deg,#ff6a00,#ee0979);
+    transition:0.4s;
+}
+
+/* Button hover animation */
+.submit-btn:hover{
+    transform:scale(1.05);
+    box-shadow:0 0 20px #ff6a00;
+}

@@ -4,7 +4,7 @@ import EmpList from './components/EmpList'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+ 
 
   return (
     <div>
