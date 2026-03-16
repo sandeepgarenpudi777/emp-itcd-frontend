@@ -1,7 +1,7 @@
 
 import axios from "axios";
 
-const API_URL="http://localhost:8080/api/emp";
+const API_URL="https://emp-itcd-backend.onrender.com/api/emp";
 
 //post method
 export const addEmp=(emp)=>axios.post(API_URL,emp);
